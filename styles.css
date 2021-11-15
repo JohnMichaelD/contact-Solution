@@ -1,6 +1,8 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial Rounded MT Bold;
+    font-weight: 400;
 }
 
 body {
@@ -37,17 +39,24 @@ header {
 .contactCaseContainer {
     display: block;
     padding: auto;
-    margin-top: 125px;
-    margin-bottom: 50px;
+    margin-top: 70px;
+    margin-bottom: 40px;
 }
 
-.refreshButtons {
-    margin: 50px;
-    
+.contactCaseImg {
+    width: 280px;
+    height: auto;
 }
 
-.refreshButtons:hover {
+.refreshButton:hover {
     cursor: pointer;
+}
+
+.refreshButton {
+    border-radius: 100px;
+    margin: 40px;
+    height: 67px;
+    width: 67px;
 }
 
 .buttonContainer {
