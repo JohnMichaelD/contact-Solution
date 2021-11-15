@@ -14,18 +14,26 @@ body {
     color: white;
 }
 
-.wrap {
+.contactCase, 
+.counter {
     display: flex;
     justify-content: center;
 }
 
-#refreshButtons {
+.refreshButtons {
     margin: 50px;
     
 }
 
-#refreshButtons:hover {
+.refreshButtons:hover {
     cursor: pointer;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttons {
@@ -51,11 +59,11 @@ body {
     background-color: #EB354A;
 }
 
-#alertIcon {
+.alertIcon {
     width: 50px;
 }
 
-#listIcon {
+.listIcon {
     width: 25px;
     height: 25px;
     display: flex;
