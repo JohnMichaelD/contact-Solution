@@ -30,6 +30,13 @@ header {
     height: 25px;
 }
 
+.logo:hover,
+.listIcon:hover,
+.alertIcon:hover,
+.refreshButton:hover {
+    cursor: pointer;
+}
+
 .contactCaseContainer, 
 .counter {
     display: flex;
@@ -46,10 +53,6 @@ header {
 .contactCaseImg {
     width: 280px;
     height: auto;
-}
-
-.refreshButton:hover {
-    cursor: pointer;
 }
 
 .refreshButton {
