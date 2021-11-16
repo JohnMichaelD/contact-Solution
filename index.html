@@ -34,9 +34,16 @@
         </div>
 
         <!--Need to add Javascript here for counter-->
-        <div class="counter">
-            <p>__ / 30</p>
-            <p>__ / 30</p>
+        <div class="counterContainer">
+
+            <div class="leftCounterContainer">
+                <h1 class="counterLeft">(..)</h1><h1>/ 30</h1>
+            </div>
+
+            <div class="rightCounterContainer">
+                <h1 class="counterRight">(..)</h1><h1>/ 30</h1>
+            </div>
+
         </div>
 
         <div class="refreshButtonContainer">
@@ -45,8 +52,8 @@
         </div>
 
         <div class="buttonContainer">
-            <button id="glassesButton" class="buttons">Wore glasses today?</button>
-            <button id="contactsButton" class="buttons">Slept in your contacts?</button>
+            <button id="glassesButton" class="buttons counter-plus">Wore glasses today?</button>
+            <button id="contactsButton" class="buttons counter-minus">Slept in your contacts?</button>
         </div>
 
     </main>
@@ -57,6 +64,34 @@
 </body>
 
 <script>
+    let counterLeftElem = document.querySelector('.counterLeft');
+    let counterRightElem = document.querySelector('.counterRight');
+    let counterMinusElem = document.querySelector('.counter-minus');
+    let counterPlusElem = document.querySelector('.counter-plus');
+
+    let count = 0;
+
+    updateDisplay();
+
+    counterPlusElem.addEventListener("click", ()=>{
+        count++;
+        updateDisplay();
+    });
+
+    counterMinusElem.addEventListener("click",()=>{
+        count--;
+        updateDisplay();
+    });
+
+    function updateDisplay(){
+        counterLeftElem.innerHTML = count;
+        counterRightElem.innerHTML = count;
+        console.log("count");
+    }
+
+    function refreshDisplayL(){
+        
+    }
 </script>
 
 </html>

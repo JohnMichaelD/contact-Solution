@@ -37,10 +37,13 @@ header {
     cursor: pointer;
 }
 
-.contactCaseContainer, 
-.counter {
+.contactCaseContainer {
     display: flex;
     justify-content: center;
+}
+
+.counterContainer {
+    
 }
 
 .contactCaseContainer {
