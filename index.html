@@ -73,6 +73,11 @@
 
     updateDisplay();
 
+    //need to code these functions
+    refreshDisplayL();
+    refreshDisplayR();
+    resetCounter();
+
     counterPlusElem.addEventListener("click", ()=>{
         count++;
         updateDisplay();
@@ -87,10 +92,6 @@
         counterLeftElem.innerHTML = count;
         counterRightElem.innerHTML = count;
         console.log("count");
-    }
-
-    function refreshDisplayL(){
-        
     }
 </script>
 
