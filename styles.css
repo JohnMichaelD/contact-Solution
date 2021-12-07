@@ -42,10 +42,6 @@ header {
     justify-content: center;
 }
 
-.counterContainer {
-    
-}
-
 .contactCaseContainer {
     display: block;
     padding: auto;
@@ -56,6 +52,17 @@ header {
 .contactCaseImg {
     width: 280px;
     height: auto;
+}
+
+.lensCounterContainer {
+    gap: 25px;
+}
+
+.lensCounterContainer,
+.leftCounterContainer,
+.rightCounterContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .refreshButton {
