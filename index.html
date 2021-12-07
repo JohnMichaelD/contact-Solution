@@ -13,49 +13,38 @@
 <body>
 
     <header>
-
         <div class="logoContainer">
             <img class ="logo" src="images/logo.png" alt="contact Logo">
         </div>
-
         <div>
             <img class ="alertIcon" src="images/alertIcon2@2x.png" alt="alert icon">
         </div>  
-
         <div class="listIcon">    
             <img src="images/listIcon@2x.png" alt="list icon">
         </div>
-
     </header>
 
     <main>
         <div class="contactCaseContainer">
             <img class="contactCaseImg" src="images/Contact Case.png" alt="contactCaseImg">
         </div>
-
         <!--Need to add Javascript here for counter-->
         <div class="counterContainer">
-
             <div class="leftCounterContainer">
                 <h1 class="counterLeft">(..)</h1><h1>/ 30</h1>
             </div>
-
             <div class="rightCounterContainer">
                 <h1 class="counterRight">(..)</h1><h1>/ 30</h1>
             </div>
-
         </div>
-
         <div class="refreshButtonContainer">
             <button class="refreshButton" id="refreshButtonL"><img src="./images/refreshButton.png"></button>
             <button class="refreshButton" id="refreshButtonR"><img src="./images/refreshButton.png"></button>
         </div>
-
         <div class="buttonContainer">
             <button id="glassesButton" class="buttons counter-minus">Wore glasses today?</button>
             <button id="contactsButton" class="buttons counter-plus">Slept in your contacts?</button>
         </div>
-
     </main>
 
     <footer>
@@ -92,6 +81,34 @@
         counterLeftElem.innerHTML = count;
         counterRightElem.innerHTML = count;
         console.log("count");
+    }
+
+    //keeps track of left contact lens age (days)
+    function lCount(){
+        //int counter to 0
+        //while running, count++ every 24 hours
+        //at count == 30, send 'alert', ask to reset count to 0?
+        //if glasses is hit, count--
+        //if sleep is hit, count++
+        //if reset is hit, count == 0
+    }
+
+    //keeps track of right contact lens age (days)
+    function rCount(){
+        //int counter to 0
+        //while running, count++ every 24 hours
+        //at count == 30, send 'alert', ask to reset count to 0?
+        //if glasses is hit, count--
+        //if sleep is hit, count++
+        //if reset is hit, count == 0
+    }
+
+    //keeps track contact case age (days)
+    function caseCounter(){
+        //int counter to 0
+        //while running, count ++ every 24 hours
+        //at count == 90, sent 'alert', ask to reset count to 0?
+        //if reset is hit, count == 0
     }
 </script>
 
