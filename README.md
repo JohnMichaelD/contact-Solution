@@ -21,6 +21,8 @@ Lastly, only for your eyes, this app will soon track the number of days of strai
 
 - (Counter)[https://dev.to/stewyearth/making-a-simple-counter-in-javascript-html-2ici]
 
+- (defer)[https://stackoverflow.com/questions/20495960/document-queryselector-is-null-error]
+
 ## Technologies
 
 - CSS
