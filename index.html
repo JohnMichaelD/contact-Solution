@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contactSolution</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 
 <body>
@@ -29,7 +29,9 @@
         <div class="contactCaseContainer">
             <img class="contactCaseImg" src="images/Contact Case.png" alt="contactCaseImg">
         </div>
-        <!--Need to add Javascript here for counter-->
+        
+
+
         <div class="lensCounterContainer">
             <div class="leftCounterContainer">
                 <h1 class="lCountDisplay">(..)</h1><h5> / 30</h5>
@@ -43,13 +45,12 @@
             <button class="refreshButton" id="refreshButtonR"><img src="./images/refreshButton.png"></button>
         </div>
         <div class="buttonContainer">
-            <button id="glassesButton" class="buttons counter-minus">Wore glasses today?</button>
-            <button id="contactsButton" class="buttons counter-plus">Slept in your contacts?</button>
+            <button id="glassesButton" class="buttons counterMinus">Wore glasses today?</button>
+            <button id="contactsButton" class="buttons counterPlus">Slept in your contacts?</button>
         </div>
     </main>
 
     <footer>
     </footer>
 </body>
-
 </html>

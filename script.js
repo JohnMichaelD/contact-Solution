@@ -4,37 +4,39 @@
 //run function to compare dateStarted with currentDate, save difference as count, Lcount, Rcount
 //if dates are equal, do nothing to date
     //apply counts from buttons
-//if dates are not eqaul, 
+//if dates are not equal, 
 
 
 // left lens counter display
-let lCountDisplayElem = document.querySelector('.lCountDisplay');
-let rCountDisplayElem = document.querySelector('.rCountDisplay');
+let lCountDisplayElem = document.querySelector(".lCountDisplay");
+let rCountDisplayElem = document.querySelector(".rCountDisplay");
 //glasses counter
-let counterMinusElem = document.querySelector('.counter-minus');
+let counterMinusElem = document.querySelector(".buttons.counterMinus");
 //slept in counter
-let counterPlusElem = document.querySelector('.counter-plus');
+let counterPlusElem = document.querySelector(".buttons.counterPlus");
 
 //initial count for left lens counter
 let lCount = 0;
 //initial count for right lens counter
-let rCount = 15;
+let rCount = 0;
 //initial count for lens case counter
 //let caseCount = 15;
 
 updateCountDisplay();
+console.log(lCount, rCount);
 
-counterPlusElem.addEventListener("click",()=>{
+
+counterPlusElem.addEventListener('click', () => {
     lCount++;
     rCount++;
     updateCountDisplay();
 });
 
-counterMinusElem.addEventListener("click",()=>{
+counterMinusElem.addEventListener('click', () => {
     lCount--;
     rCount--;
     updateCountDisplay();
-})
+});
 
 function updateCountDisplay(){
     lCountDisplayElem.innerHTML = lCount;
@@ -42,8 +44,7 @@ function updateCountDisplay(){
     return 0;
 };
 
-console.log(lCount);
-
+/*
 //keeps track of left contact lens age (days)
 function lCounter(){
     //int counter to 0
@@ -71,3 +72,4 @@ function caseCounter(){
     //at count == 90, sent 'alert', ask to reset count to 0?
     //if reset is hit, count == 0
 }
+*/
