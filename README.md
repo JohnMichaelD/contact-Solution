@@ -41,33 +41,39 @@ Currently, the application is still in development, but you will be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/JohnMichaelD/contact-Solution)
+- Files URL: [Github Repo](https://github.com/JohnMichaelD/contact-Solution)
 - Live Site URL: [Live Site](https://johnmichaeld.github.io/contact-Solution/)
 
 ## My Process
 
 ### Built With
 
-- Designed in Adobe XD
 - CSS custom properties
 - Semantic HTML5 markup
 - JavaScript
 - Mobile-first Design principals
+- Adobe XD
 
 ### What I Learned
 
 ### Continued Development
 
-This project 
+This project is a fantastic learning roller coaster as I bring my design to life! 
+
+#### Adobe XD
+
+#### JavaScript
+
+
 
 ### Useful resources
 
-- (Counter)[https://dev.to/stewyearth/making-a-simple-counter-in-javascript-html-2ici]
+- [Counter](https://dev.to/stewyearth/making-a-simple-counter-in-javascript-html-2ici)
 
-- (defer)[https://stackoverflow.com/questions/20495960/document-queryselector-is-null-error]
-- (defer) [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer]
+- [defer](https://stackoverflow.com/questions/20495960/document-queryselector-is-null-error)
+- [defer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer)
 
-- (Time)[https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock]
+- [Time](https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock)
 
 ## Author
 
