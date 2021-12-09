@@ -1,11 +1,11 @@
 # Contact Solution
 
-ContactSolution is an app that I wanted to build to help keep track how long your current contact lenses are in use, as well as your contact case. 
+**ContactSolution** is an app that I designed to help keep track of your contact lens usage. This was an everyday little problem that I wanted a long term solution for.
 
 ## Table of Contents
 
 - [Overview](#overview)
-    - [The Challenge](#the-challenge)
+    - [Application Breakdown](#application-breakdown)
     - [Screenshot](#screenshot)
     - [Links](#links)
 - [My process](#my-process)
@@ -17,13 +17,13 @@ ContactSolution is an app that I wanted to build to help keep track how long you
 
 ## Overview
 
-### The Challenge
+### Application Breakdown
 
-Currently, the application is still in development, but you will be able to:
+Currently, the application is still in development, but you will soon be able to:
 
-- Separately track the days of each contact lens use. Sometimes I have to toss one contact, and keeping track of two different lenses was pitiful. 
+- Separately track the days of each contact lens use. Sometimes you may have to toss one contact out, and keeping track of two different lenses is an annoying task.
 
-- An alert will be sent when your contacts have been worn 30 days, and should be replaced.
+- An alert will be sent when your contacts have been worn 30 days, and should be replaced, prompting you to reset.
 
 - Track the number of days your current contact case has been in use.
 
@@ -33,7 +33,7 @@ Currently, the application is still in development, but you will be able to:
 
 - In addition to resetting the counter, you can subtract a day from the counter when you wear glasses, or add a day when you accidentally sleep in them :( .
 
-- Soon, I would like to be able to begin tracking data, so each user can access the number of days contacts wore worn, glasses worn, etc. 
+- Soon, this app may implement the ability to track specific data, so each user can access the number of days that contacts were worn, glasses were worn, etc. 
 
 ### Screenshot
 
@@ -41,8 +41,9 @@ Currently, the application is still in development, but you will be able to:
 
 ### Links
 
-- Files URL: [Github Repo](https://github.com/JohnMichaelD/contact-Solution)
-- Live Site URL: [Live Site](https://johnmichaeld.github.io/contact-Solution/)
+- [Github Repo](https://github.com/JohnMichaelD/contact-Solution)
+- [Live Site](https://johnmichaeld.github.io/contact-Solution/)
+- [Adobe XD Design](https://xd.adobe.com/view/e9bca82e-e203-45c7-b8b0-aa42c39eb9ba-bcef/?fullscreen)
 
 ## My Process
 
@@ -56,14 +57,30 @@ Currently, the application is still in development, but you will be able to:
 
 ### What I Learned
 
+I am learning quite a lot from this project. 
+
+###### Issues I've come across:
+
+- querySelector kept coming up as null, solved by adding 'defer' to JS script tags. 
+
+- 
+
 ### Continued Development
 
 This project is a fantastic learning roller coaster as I bring my design to life! 
 
-#### Adobe XD
+- ###### JavaScript
+    As development is ongoing, I will be adding more interactivity &  such as:
+    - a calendar start date, which the counter(s) use as the starting reference point
+    
 
-#### JavaScript
+- ###### CSS custom properties
+    - Currently all of the icons in the application are image source files from the XD design files. I would like to spend some time to create them purely in CSS.
 
+- ###### Backend Development
+    - cached data to keep track of the counters for multiple users
+    - data tracking for multiple users information stored in a database
+    - SQL
 
 
 ### Useful resources
@@ -78,4 +95,3 @@ This project is a fantastic learning roller coaster as I bring my design to life
 ## Author
 
 - Website - [JMD](https://www.johnmdarrin.com)
-- Frontend Mentor - [@JohnMichaelD](https://www.frontendmentor.io/profile/JohnMichaelD)
