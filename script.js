@@ -15,16 +15,25 @@ let counterMinusElem = document.querySelector(".buttons.counterMinus");
 //slept in counter
 let counterPlusElem = document.querySelector(".buttons.counterPlus");
 
+let leftResetButtonElem = document.querySelector("#refreshButtonL");
+
+let rightResetButtonElem = document.querySelector("#refreshButtonR");
+
 //initial count for left lens counter
 let lCount = 0;
 //initial count for right lens counter
 let rCount = 0;
 //initial count for lens case counter
-//let caseCount = 15;
+//let caseCount = 0;
 
 updateCountDisplay();
 console.log(lCount, rCount);
 
+setTimeout(time, 3000);
+
+function time() {
+    lCount++;
+}
 
 counterPlusElem.addEventListener('click', () => {
     lCount++;
@@ -43,6 +52,17 @@ function updateCountDisplay(){
     rCountDisplayElem.innerHTML = rCount;
     return 0;
 };
+
+leftResetButtonElem.addEventListener('click', () => {
+    lCount = 0;
+    updateCountDisplay();
+})
+
+rightResetButtonElem.addEventListener('click', () => {
+    rCount = 0;
+    updateCountDisplay();
+})
+
 
 /*
 //keeps track of left contact lens age (days)

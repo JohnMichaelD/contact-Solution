@@ -54,6 +54,11 @@ header {
     height: auto;
 }
 
+.daysTotal {
+    padding-top: 18px;
+    padding-left: 5px;
+}
+
 .lensCounterContainer {
     gap: 25px;
 }
