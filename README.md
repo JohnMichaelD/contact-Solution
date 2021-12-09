@@ -63,25 +63,27 @@ I am learning quite a lot from this project.
 
 - querySelector kept coming up as null, solved by adding 'defer' to JS script tags. 
 
-- 
-
 ### Continued Development
 
-This project is a fantastic learning roller coaster as I bring my design to life! 
+This project is a fantastic learning roller coaster as I bring my design to life! Here's what I'm currently working on for this project:
 
 - ###### JavaScript
     As development is ongoing, I will be adding more interactivity &  such as:
     - a calendar start date, which the counter(s) use as the starting reference point
+    - counters are currently loaded as the browser loads and can't be saved
     
 
 - ###### CSS custom properties
     - Currently all of the icons in the application are image source files from the XD design files. I would like to spend some time to create them purely in CSS.
+    - Currently the Alert/Bell Icon, menu list, and contact case still need to be updated.
+    - Design and implementation of side menu page that rolls out
+    - The glasses & slept buttons need icons added.
+    - Multi-browser design
 
 - ###### Backend Development
     - cached data to keep track of the counters for multiple users
     - data tracking for multiple users information stored in a database
     - SQL
-
 
 ### Useful resources
 
