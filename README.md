@@ -54,6 +54,7 @@ Currently, the application is still in development, but you will soon be able to
 - JavaScript
 - Mobile-first Design principals
 - Adobe XD
+- Animate.CSS animations
 
 ### What I Learned
 
@@ -93,6 +94,8 @@ This project is a fantastic learning roller coaster as I bring my design to life
 - [defer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer)
 
 - [Time](https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock)
+
+- [Animate.CSS](https://animate.style/)
 
 ## Author
 
