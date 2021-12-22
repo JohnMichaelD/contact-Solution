@@ -15,7 +15,7 @@ let caseCount = 90;
 updateCountDisplay();
 alertReplaceContacts();
 
-// alert user when lcount or rcount = 0;
+// when one, or both contact lenses counter hits 0, alert user it's time to replace.
 function alertReplaceContacts() {
     if (lCount == 0 && rCount == 0) {
         if (confirm("It's time to replace your contacts. Reset countdown?")) {
@@ -39,6 +39,14 @@ function alertReplaceContacts() {
             rCountDisplayElem.innerHTML = rCount;
         } else {
             return 0;
+        }
+    } if (lCount < 0 || rCount < 0) {
+        let daysPast = lCount * -1;
+        if (confirm(`"Time to replace your contacts! It's ${daysPast} day(s) overdue!"`)) {
+            rCount = 30;
+            lCount = 30;
+            rCountDisplayElem.innerHTML = rCount;
+            lCountDisplayElem.innerHTML = lCount;
         }
     }
 }

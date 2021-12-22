@@ -31,11 +31,15 @@ Currently, the application is still in development, but you will soon be able to
 
 - An alert will be sent when your contact case has been in use for 90 days and should be replaced.
 
+- This alert for now is just being sent from the browser. But I would like to implement and email/text alert. Which will let you refresh the counter by replying 'yes' when prompted.
+
 - When starting with new lenses or a case, you can reset the counters for your left, and right contact. As well as for the contact case. 
 
 - In addition to resetting the counter, you can subtract a day from the counter when you wear glasses, or add a day when you accidentally sleep in them :( .
 
 - Soon, this app may implement the ability to track specific data, so each user can access the number of days that contacts were worn, glasses were worn, etc. 
+
+
 
 ### Screenshot
 

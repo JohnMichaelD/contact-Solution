@@ -107,6 +107,14 @@ header {
     font-family: Arial Rounded MT Bold;
     font-weight: 400;
     margin: 17px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonsImage {
+    width: 45px;
+    padding-left: 45px;
 }
 
 .buttons:hover {
