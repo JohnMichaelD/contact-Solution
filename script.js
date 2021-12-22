@@ -1,16 +1,16 @@
 let lCountDisplayElem = document.querySelector(".lCountDisplay");
 let rCountDisplayElem = document.querySelector(".rCountDisplay");
-let counterMinusElem = document.querySelector(".buttons.counterMinus");
 let counterPlusElem = document.querySelector(".buttons.counterPlus");
+let counterMinusElem = document.querySelector(".buttons.counterMinus");
 let leftResetButtonElem = document.querySelector("#refreshButtonL"); 
 let rightResetButtonElem = document.querySelector("#refreshButtonR");
 
 //initial count for left lens counter
-let lCount = 0;
+let lCount = 30;
 //initial count for right lens counter
-let rCount = 0;
+let rCount = 30;
 //initial count for lens case counter
-let caseCount = 0;
+let caseCount = 90;
 
 updateCountDisplay();
 
@@ -32,18 +32,18 @@ counterMinusElem.addEventListener('click', () => {
 function updateCountDisplay(){
     lCountDisplayElem.innerHTML = lCount;
     rCountDisplayElem.innerHTML = rCount;
-    return 0;
+    //return 0;
 };
 
 //left contact counter is reset to zero, when left reset button is clicked
 leftResetButtonElem.addEventListener('click', () => {
-    lCount = 0;
+    lCount = 30;
     updateCountDisplay();
 })
 
 //right contact counter is reset to zero, when right reset button is clicked
 rightResetButtonElem.addEventListener('click', () => {
-    rCount = 0;
+    rCount = 30;
     updateCountDisplay();
 })
 

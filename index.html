@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script type="text/javascript" src="script.js" defer></script>
 </head>
-
 <body>
-    
     <header>
         <div class="logoContainer">
             <img class ="logo" src="images/logo.png" alt="contact Logo">
@@ -24,31 +22,43 @@
             <img src="images/listIcon@2x.png" alt="list icon">
         </div>
     </header>
-
-
     <main>
         <div class="contactCaseContainer">
             <img class="contactCaseImg" src="images/Contact Case.png" alt="contactCaseImg">
+            <h5 class="caseCounter">90</h5>
         </div>
         <div class="lensCounterContainer">
-            <div class="leftCounterContainer">
-                <h1 class="lCountDisplay">(..)</h1><h5 class="daysTotal"> / 30</h5>
+            <div>
+                <div class="leftCounterContainer">
+                    <h1 class="lCountDisplay">(..)</h1>
+                    <h5 class="daysTotal"> / 30</h5>
+                </div>  
+                <h5 class="counterDaysLeft">days left.</h5>
             </div>
-            <div class="rightCounterContainer">
-                <h1 class="rCountDisplay">(..)</h1><h5 class="daysTotal"> / 30</h5>
+            <div>
+                <div class="rightCounterContainer">
+                    <h1 class="rCountDisplay">(..)</h1>
+                    <h5 class="daysTotal"> / 30</h5>
+                </div>
+                <h5 class="counterDaysLeft">days left.</h5>
             </div>
         </div>
         <div class="refreshButtonContainer">
-            <button class="refreshButton" id="refreshButtonL"><img class="refreshButtonL" src="./images/refreshButton.png"></button>
-            <button class="refreshButton" id="refreshButtonR"><img src="./images/refreshButton.png"></button>
+            <button class="refreshButton" id="refreshButtonL">
+                <img class="refreshButtonL" src="./images/refreshButton.png">
+            </button>
+            <button class="refreshButton" id="refreshButtonR">
+                <img src="./images/refreshButton.png">
+            </button>
         </div>
         <div class="buttonContainer">
-            <button id="glassesButton" class="buttons counterMinus">Wore glasses today?</button>
-            <button id="contactsButton" class="buttons counterPlus">Slept in your contacts?</button>
+            <button id="glassesButton" class="buttons counterPlus">Wore glasses today?</button>
+            <button id="contactsButton" class="buttons counterMinus">Slept in your contacts?</button>
         </div>
     </main>
-
     <footer>
+        <img src="images/copyright.svg" alt="copyright">
+        <p>Contact-Solution 2023</p>
     </footer>
 </body>
 </html>

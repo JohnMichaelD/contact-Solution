@@ -2,6 +2,8 @@
 
 **ContactSolution** is an app that I designed to help keep track of your contact lens usage. This was an everyday little problem that I wanted a long term solution for.
 
+I wanted a tracker that updated automatically, and would alert me when it was time to replace my contacts or contact case. I would only need to access the app to update the counter for days I wore glasses, or accidently fell asleep wearing contacts.
+
 ## Table of Contents
 
 - [Overview](#overview)
