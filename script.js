@@ -13,6 +13,35 @@ let rCount = 30;
 let caseCount = 90;
 
 updateCountDisplay();
+alertReplaceContacts();
+
+// alert user when lcount or rcount = 0;
+function alertReplaceContacts() {
+    if (lCount == 0 && rCount == 0) {
+        if (confirm("It's time to replace your contacts. Reset countdown?")) {
+            lCount = 30;
+            rCount = 30;  
+            lCountDisplayElem.innerHTML = lCount;
+            rCountDisplayElem.innerHTML = rCount;
+        } else {
+            return 0;
+        }
+    } if (lCount == 0 && rCount > 0) {
+        if (confirm("It's time to replace your left contact. Reset countdown?")) {
+            lCount = 30;
+            lCountDisplayElem.innerHTML = lCount;
+        } else {
+            return 0;
+        }
+    } if (lCount > 0 && rCount == 0) {
+        if (confirm("It's time to replace your right contact. Reset countdown?")) {
+            rCount = 30;
+            rCountDisplayElem.innerHTML = rCount;
+        } else {
+            return 0;
+        }
+    }
+}
 
 //when slept-in button is pressed, add 1 to each contact lens count
 counterPlusElem.addEventListener('click', () => {
@@ -32,6 +61,7 @@ counterMinusElem.addEventListener('click', () => {
 function updateCountDisplay(){
     lCountDisplayElem.innerHTML = lCount;
     rCountDisplayElem.innerHTML = rCount;
+    alertReplaceContacts();
     //return 0;
 };
 
