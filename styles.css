@@ -71,6 +71,7 @@ header {
 
 .counterDaysLeft {
     color:#42E0C2;
+    font-size: 15px;
 }
 
 .lensCounterContainer {
@@ -83,6 +84,12 @@ header {
     display: flex;
     justify-content: center;
 }
+
+.lCountDisplay,
+.rCountDisplay {
+    font-size: 33px;
+}
+
 
 .refreshButton {
     border-radius: 100px;
