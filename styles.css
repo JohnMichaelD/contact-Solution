@@ -121,6 +121,7 @@ header {
 .buttonsImage {
     width: 45px;
     padding-left: 45px;
+    padding-top: 6px;
 }
 
 .buttons:hover {
@@ -145,4 +146,13 @@ footer {
     align-items: center;
     font-size: 12px;
     gap: 5px;
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #42E0C2
 }
