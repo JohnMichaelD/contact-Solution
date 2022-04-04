@@ -2,7 +2,7 @@
 
 **ContactSolution** is an app that I designed to help keep track of your contact lens usage. This was an everyday little problem that I wanted a long term solution for.
 
-I wanted a tracker that updated automatically, and would alert me when it was time to replace my contacts or contact case. I would only need to access the app to update the counter for days I wore glasses, or accidently fell asleep wearing contacts.
+I wanted a tracker that updated automatically, and would alert me when it was time to replace my contacts or contact case. I would only need to access the app to update the counter for days I wore glasses, or accidentally fell asleep wearing contacts.
 
 ## Table of Contents
 
@@ -104,6 +104,8 @@ This project is a fantastic learning roller coaster as I bring my design to life
 - [Animate.CSS](https://animate.style/)
 - [LocalStorage API](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage)
 - [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
+- [.getDate](https://bobbyhadz.com/blog/javascript-typeerror-date-getdate-is-not-a-function)
+
 
 ## Author
 

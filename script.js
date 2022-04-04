@@ -11,12 +11,29 @@ let lCount;
 let rCount;
 //initial count for lens case counter
 let caseCount;
+let startDate;
+let startDay;
 
+checkStorageStartDate();
 checkStorageLCounts();
 checkStorageRCounts();
 updateCountDisplay();
 alertReplaceContacts();
 
+//check to see if theres a start date saved already, if not, save todays date
+function checkStorageStartDate(){
+    if(localStorage.getItem('startDate')){
+        startDate = localStorage.getItem('startDate');
+    } else {
+        startDate = new Date();
+        startDay = startDate.getDate();
+        localStorage.setItem('startDate', startDate);
+        } 
+}
+
+
+
+//check if first time visiting, if not, update lCount
 function checkStorageLCounts(){
     if(localStorage.getItem('leftCount')){
         lCount = localStorage.getItem('leftCount');
@@ -25,6 +42,7 @@ function checkStorageLCounts(){
     }
 }
 
+//check if first time visiting, if not, update rCount
 function checkStorageRCounts(){
     if(localStorage.getItem('rightCount')){
         rCount = localStorage.getItem('rightCount');
