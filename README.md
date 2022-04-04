@@ -102,6 +102,8 @@ This project is a fantastic learning roller coaster as I bring my design to life
 - [Time](https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock)
 
 - [Animate.CSS](https://animate.style/)
+- [LocalStorage API](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage)
+- [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
 
 ## Author
 

@@ -6,14 +6,40 @@ let leftResetButtonElem = document.querySelector("#refreshButtonL");
 let rightResetButtonElem = document.querySelector("#refreshButtonR");
 
 //initial count for left lens counter
-let lCount = 30;
+let lCount;
 //initial count for right lens counter
-let rCount = 30;
+let rCount;
 //initial count for lens case counter
-let caseCount = 90;
+let caseCount;
 
+checkStorageLCounts();
+checkStorageRCounts();
 updateCountDisplay();
 alertReplaceContacts();
+
+function checkStorageLCounts(){
+    if(localStorage.getItem('leftCount')){
+        lCount = localStorage.getItem('leftCount');
+    } else {
+        localStorage.setItem('leftCount', 30);
+    }
+}
+
+function checkStorageRCounts(){
+    if(localStorage.getItem('rightCount')){
+        rCount = localStorage.getItem('rightCount');
+    } else {
+        localStorage.setItem('rightCount', 30);
+    }
+}
+
+function checkCaseCounts(){
+    if(localStorage.getItem('caseCount')){
+        caseCount = localStorage.getItem('caseCount');
+    } else {
+        localStorage.setItem('caseCount', 90);
+    }
+}
 
 // when one, or both contact lenses counter hits 0, alert user it's time to replace.
 function alertReplaceContacts() {
@@ -55,6 +81,8 @@ function alertReplaceContacts() {
 counterPlusElem.addEventListener('click', () => {
     lCount++;
     rCount++;
+    localStorage.setItem('leftCount', lCount);
+    localStorage.setItem('rightCount', rCount);
     updateCountDisplay();
 });
 
@@ -62,6 +90,8 @@ counterPlusElem.addEventListener('click', () => {
 counterMinusElem.addEventListener('click', () => {
     lCount--;
     rCount--;
+    localStorage.setItem('leftCount', lCount);
+    localStorage.setItem('rightCount', rCount);
     updateCountDisplay();
 });
 
@@ -76,13 +106,16 @@ function updateCountDisplay(){
 //left contact counter is reset to zero, when left reset button is clicked
 leftResetButtonElem.addEventListener('click', () => {
     lCount = 30;
+    localStorage.setItem('leftCount', lCount);
     updateCountDisplay();
 })
 
 //right contact counter is reset to zero, when right reset button is clicked
 rightResetButtonElem.addEventListener('click', () => {
     rCount = 30;
+    localStorage.setItem('rightCount', rCount);
     updateCountDisplay();
+    
 })
 
 
