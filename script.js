@@ -1,22 +1,31 @@
 let lCountDisplayElem = document.querySelector(".lCountDisplay");
 let rCountDisplayElem = document.querySelector(".rCountDisplay");
+let caseCountElem = document.querySelector("#caseCounterDisplay");
+
 let counterPlusElem = document.querySelector(".buttons.counterPlus");
 let counterMinusElem = document.querySelector(".buttons.counterMinus");
 let leftResetButtonElem = document.querySelector("#refreshButtonL"); 
 let rightResetButtonElem = document.querySelector("#refreshButtonR");
 
 //initial count for left lens counter
-let lCount;
+let lCount = 30;
 //initial count for right lens counter
-let rCount;
+let rCount = 30;
 //initial count for lens case counter
-let caseCount;
-let startDate;
-let startDay;
+let caseCount = 90;
+
+// local storage variables
+let startDate; //change to dateStartedCounter
+let startDay; //change to current day?
+
+// data tracking variables
+//let daysSleptInContacts = 0;
+//let daysWornGlasses = 0;
 
 checkStorageStartDate();
 checkStorageLCounts();
 checkStorageRCounts();
+checkCaseCounts();
 updateCountDisplay();
 alertReplaceContacts();
 
@@ -31,14 +40,12 @@ function checkStorageStartDate(){
         } 
 }
 
-
-
 //check if first time visiting, if not, update lCount
 function checkStorageLCounts(){
     if(localStorage.getItem('leftCount')){
         lCount = localStorage.getItem('leftCount');
     } else {
-        localStorage.setItem('leftCount', 30);
+        localStorage.setItem('leftCount', lCount);
     }
 }
 
@@ -47,10 +54,11 @@ function checkStorageRCounts(){
     if(localStorage.getItem('rightCount')){
         rCount = localStorage.getItem('rightCount');
     } else {
-        localStorage.setItem('rightCount', 30);
+        localStorage.setItem('rightCount', rCount);
     }
 }
 
+//check if first time visiting, if not, update caseCount
 function checkCaseCounts(){
     if(localStorage.getItem('caseCount')){
         caseCount = localStorage.getItem('caseCount');
@@ -89,9 +97,11 @@ function alertReplaceContacts() {
         if (confirm(`"Time to replace your contacts! It's ${daysPast} day(s) overdue!"`)) {
             rCount = 30;
             lCount = 30;
-            rCountDisplayElem.innerHTML = rCount;
-            lCountDisplayElem.innerHTML = lCount;
+            updateCountDisplay();
+            localStorage.setItem('leftCount', lCount);
+            localStorage.setItem('rightCount', rCount);
         }
+        
     }
 }
 
@@ -117,6 +127,7 @@ counterMinusElem.addEventListener('click', () => {
 function updateCountDisplay(){
     lCountDisplayElem.innerHTML = lCount;
     rCountDisplayElem.innerHTML = rCount;
+    caseCountElem = caseCount;
     alertReplaceContacts();
     //return 0;
 };
@@ -133,74 +144,14 @@ rightResetButtonElem.addEventListener('click', () => {
     rCount = 30;
     localStorage.setItem('rightCount', rCount);
     updateCountDisplay();
-    
 })
 
 
-// PSEUDOCODE_________________
-// first, check if user is new, (not signed in?) or has already started the counter previously.
+/*current bugs / fixes
 
-// if new, 
-    // alert, 'hello, press here to begin count' (should it be a countdown?)
-    // prompt user to enter days of current contact usage; lInput, rInput
-        // lInput = lCount;
-        // rInput = rCount;
-    // begin counter, save timestamp to variable??? use cookies? cache? or database?
-        //grab current date/timestamp = let that equal startDate
+- alert function: when count reaches 0, and user is prompted to reset count to 30, reset isn't saved to local storage, and count is set to 0 again creating an endless loop. Only saves when any of the buttons are pressed
 
-// if not new, update UI to show counter for user using startDate
-    // run function to compare startDate with currentDate, save difference as count, lCount, rCount
-    // loop this function? how often should it be updating?
+- caseCount not updating/ showing starting count of 90
 
 
-// (ALERT) if lCount or/and rCount = 30 
-    // alert user
-    // prompt reset button, "Ready to change your contacts? This will reset the counters back to zero."
-        // if yes
-            // lCount = 0
-            // rCount = 0
-        // if no 
-            // do nothing
-        // alert once per day
-
-
-// (ALERT) if caseCount =  90 for case
-    // alert user
-    // prompt reset button, "Ready to change your contact case? This will reset the counter back to zero."
-        // if yes
-            // caseCount = 0
-        // if no 
-            // do nothing
-        // alert once per day
-
-
-
-/*
-//keeps track of left contact lens age (days)
-function lCounter(){
-    int counter to 0
-    while running, count++ every 24 hours
-    at count == 30, send 'alert', ask to reset count to 0?
-    if glasses is hit, count--
-    if sleep is hit, count++
-    if reset is hit, count == 0
-}
-
-//keeps track of right contact lens age (days)
-function rCounter(){
-    //int counter to 0
-    //while running, count++ every 24 hours
-    //at count == 30, send 'alert', ask to reset count to 0?
-    //if glasses is hit, count--
-    //if sleep is hit, count++
-    //if reset is hit, count == 0
-}
-
-//keeps track contact case age (days)
-function caseCounter(){
-    //int counter to 0
-    //while running, count ++ every 24 hours
-    //at count == 90, sent 'alert', ask to reset count to 0?
-    //if reset is hit, count == 0
-}
 */
